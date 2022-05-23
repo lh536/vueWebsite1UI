@@ -1,10 +1,11 @@
 {
-  "name": "boilerplate",
+  "name": "website1",
   "version": "0.1.0",
-  "description": "This is an initial boilerplate for VueJS projects using TailwindCSS (ver.3.0.0) and ViteJS",
+  "description": "This is a sample of a webSite using VueJS, Tailwind CSS and Vite",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "docs": "vite build --outDir ./docs --minify true --emptyOutDir true --base ./",
     "preview": "vite preview"
   },
   "keywords": [
