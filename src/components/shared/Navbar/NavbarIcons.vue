@@ -2,13 +2,13 @@
     <div>
         <ul class="flex space-x-4">
             <li>
-                <svgIcon svgId="search" :class="'w-7 h-7'" />
+                <svg-icon svgId="search" :class="'w-7 h-7'" />
             </li>
             <li>
-                <svgIcon svgId="user" :class="'w-7 h-7'" />
+                <svg-icon svgId="user" :class="'w-7 h-7'" />
             </li>
             <li>
-                <svgIcon svgId="shoppingCart" :class="'w-7 h-7'" />
+                <svg-icon svgId="shoppingCart" :class="'w-7 h-7'" />
             </li>
         </ul>
     </div>
@@ -20,7 +20,7 @@ import { defineAsyncComponent } from "vue"
     export default {
         name: 'NavbarIcons',
         components: {
-            svgIcon: defineAsyncComponent ( () => import ('@/components/shared/svgIcon.vue'))
+            SvgIcon: defineAsyncComponent(() => import("@/components/shared/SvgIcon.vue")),
         }
     }
 

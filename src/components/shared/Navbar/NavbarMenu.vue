@@ -1,5 +1,5 @@
 <template>
-    <svgIcon svgId="menu" :class="'w-7 h-7 rotate-180'" />
+    <svg-icon svgId="menu" :class="'w-7 h-7 rotate-180'" />
 </template>
 
 
@@ -8,7 +8,7 @@ import { defineAsyncComponent } from 'vue'
     export default {
         name: 'NavbarMenu',
         components: {
-            svgIcon: defineAsyncComponent(() => import ("@/components/shared/svgIcon.vue"))
+            SvgIcon: defineAsyncComponent(() => import("@/components/shared/SvgIcon.vue")),
         }
     }
 
