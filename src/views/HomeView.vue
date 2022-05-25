@@ -6,13 +6,12 @@
 
 
 <script>
-import { defineAsyncComponent } from "vue" // LAZY LOADING
-// import DemoForm from "@/modules/demo/components/DemoForm.vue"
+import { defineAsyncComponent } from "vue"
     export default {
         name: 'HomeView',
         components: {
-            DemoForm: defineAsyncComponent ( () => import ('@/components/DemoForm.vue')), // LAZY LOADING
-            Counter: defineAsyncComponent ( () => import ('@/components/Counter.vue'))
+            DemoForm: defineAsyncComponent(() => import("@/components/DemoForm.vue")),
+            Counter: defineAsyncComponent(() => import("@/components/Counter.vue")),
         }
     }
 
