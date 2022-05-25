@@ -18,7 +18,7 @@
     [multiple],
     textarea,
     select {
-        @apply w-full border border-gray-300 rounded-lg shadow-md shadow-indigo-200 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500;
+        @apply w-full focus:border-webSite-gray focus:ring-1 focus:ring-webSite-gray text-stone-800;
     }
 
     [type='checkbox'],
