@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ul class="flex space-x-4">
+        <ul class="flex items-center space-x-4">
             <li>
                 <svg-icon svgId="search" :class="'w-7 h-7'" />
             </li>

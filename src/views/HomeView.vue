@@ -1,7 +1,9 @@
 <template>
-    <h1>Home View</h1>
+    <navbar />
+    <main-menu />
+    <!-- <h1>Home View</h1>
     <demo-form message="Hi!! I'm a message from App.vue" />
-    <counter />
+    <counter /> -->
 </template>
 
 
@@ -10,8 +12,10 @@ import { defineAsyncComponent } from "vue"
     export default {
         name: 'HomeView',
         components: {
-            DemoForm: defineAsyncComponent(() => import("@/components/DemoForm.vue")),
-            Counter: defineAsyncComponent(() => import("@/components/Counter.vue")),
+            Navbar: defineAsyncComponent(() => import("@/components/shared/Navbar.vue")),
+            MainMenu: defineAsyncComponent(() => import("@/components/shared/MainMenu.vue")),
+            // DemoForm: defineAsyncComponent(() => import("@/components/DemoForm.vue")),
+            // Counter: defineAsyncComponent(() => import("@/components/Counter.vue")),
         }
     }
 

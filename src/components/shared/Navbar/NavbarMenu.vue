@@ -1,5 +1,8 @@
 <template>
-    <svg-icon svgId="menu" :class="'w-7 h-7 rotate-180'" />
+    <div>
+        <svg-icon svgId="menu" :class="'w-7 h-7 rotate-180 hidden'" />
+        <svg-icon svgId="cancel" :class="'w-8 h-8'" />
+    </div>
 </template>
 
 

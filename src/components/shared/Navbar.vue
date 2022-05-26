@@ -2,7 +2,7 @@
     <div class="">
         <div class="h-20 border flex justify-between items-center px-4">
             <navbar-logo />
-            <navbar-icons :class="'ml-auto mr-3 hidden'" />
+            <navbar-icons :class="'ml-auto hidden'" />
             <navbar-search-form :class="''" />
             <navbar-menu :class="''" />
         </div>
@@ -13,7 +13,7 @@
 <script>
 import { defineAsyncComponent } from "vue"
     export default {
-    name: "NavbarView",
+    name: "Navbar",
     components: {
         NavbarLogo: defineAsyncComponent(() => import("@/components/shared/Navbar/NavbarLogo.vue")),
         NavbarIcons: defineAsyncComponent(() => import("@/components/shared/Navbar/NavbarIcons.vue")),
