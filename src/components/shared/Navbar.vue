@@ -1,16 +1,17 @@
 <template>
     <div class="">
         <div class="h-20 border flex justify-between items-center px-4">
-            <navbar-logo />
-            <navbar-icons :class="'ml-auto mr-2'" />
-            <navbar-search-form :class="'hidden'" />
-            <navbar-menu :class="''" />
+            <navbar-logo :class="'mr-3'" />
+            <navbar-icons v-if="!showSearchForm" :class="'ml-auto'" />
+            <navbar-search-form />
+            <navbar-menu :class="'ml-3'" @click="showMenuToogle" />
         </div>
     </div>
 </template>
 
 
 <script>
+import { mapState, mapActions } from "vuex";
 import { defineAsyncComponent } from "vue"
     export default {
     name: "Navbar",
@@ -19,6 +20,12 @@ import { defineAsyncComponent } from "vue"
         NavbarIcons: defineAsyncComponent(() => import("@/components/shared/Navbar/NavbarIcons.vue")),
         NavbarSearchForm: defineAsyncComponent(() => import("@/components/shared/Navbar/NavbarSearchForm.vue")),
         NavbarMenu: defineAsyncComponent(() => import("@/components/shared/Navbar/NavbarMenu.vue")),
+    },
+    methods: {
+        ...mapActions(['showMenuToogle'])
+    },
+    computed: {
+        ...mapState(['showSearchForm'])
     }
 }
 

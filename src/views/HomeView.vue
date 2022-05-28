@@ -1,6 +1,6 @@
 <template>
     <navbar />
-    <main-menu :class="''" />
+    <main-menu />
     <div class="relative">
         <overlay-layer />
         <hero-section />

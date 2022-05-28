@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute right-0 bg-webSite-white w-3/4 divide-y divide-webSite-gray z-10">
+    <div v-if="showMenu" class="absolute right-0 bg-webSite-white w-3/4 divide-y divide-webSite-gray z-10">
 
             <!-- MEN OPTION -->
             <main-menu-category-title title="Men" />
@@ -23,6 +23,7 @@
 
 
 <script>
+import { mapState } from "vuex";
 import { defineAsyncComponent } from 'vue'
     export default {
         name: 'MainMenu',
@@ -30,6 +31,9 @@ import { defineAsyncComponent } from 'vue'
             MainMenuCategoryTitle: defineAsyncComponent(() => import("@/components/shared/MainMenu/MainMenuCategoryTitle.vue")),
             MainMenuCategoryOptions: defineAsyncComponent(() => import("@/components/shared/MainMenu/MainMenuCategoryOptions.vue")),
             SvgIcon: defineAsyncComponent(() => import("@/components/shared/SvgIcon.vue")),
+        },
+        computed: {
+            ...mapState(['showMenu'])
         }
     }
 

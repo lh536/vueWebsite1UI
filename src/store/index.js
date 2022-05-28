@@ -2,6 +2,8 @@ import { createStore } from "vuex"
 
 export default createStore ({
     state: {
+        showSearchForm: false,
+        showMenu: false,
         counter: 1000
     },
 
@@ -10,6 +12,14 @@ export default createStore ({
     },
 
     mutations: {
+        showSearchForm(state) {
+            state.showSearchForm = !state.showSearchForm
+            state.showMenu = true ? state.showMenu = false : state.showMenu
+        },
+        showMenuToogle(state) {
+            state.showMenu = !state.showMenu
+            state.showSearchForm = true ? state.showSearchForm = false : state.showSearchForm
+        },
         increase(state, payload) {
             state.counter += payload
         },
@@ -19,6 +29,12 @@ export default createStore ({
     },
 
     actions: {
+        showSearchFormToogle({commit}) {
+            commit('showSearchForm')
+        },
+        showMenuToogle({commit}) {
+            commit('showMenuToogle')
+        },
         actionIncrease({commit}, number) {
             commit('increase', 100)
         },

@@ -1,11 +1,15 @@
 <template>
-    <div class="absolute top-0 bg-black/75 w-full h-full"></div>
+    <div v-if="showMenu" class="absolute top-0 bg-black/75 w-full h-full"></div>
 </template>
 
 
 <script>
+import { mapState } from "vuex";
     export default {
-        name: 'OverlayLayer'
+        name: 'OverlayLayer',
+        computed: {
+            ...mapState(['showMenu'])
+        }
     }
 
 </script>
