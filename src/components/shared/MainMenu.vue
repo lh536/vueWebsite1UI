@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-webSite-white w-3/4 ml-auto divide-y divide-webSite-gray">
+    <div class="absolute right-0 bg-webSite-white w-3/4 divide-y divide-webSite-gray">
 
             <!-- MEN OPTION -->
             <main-menu-category-title title="Men" />
