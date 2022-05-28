@@ -1,7 +1,7 @@
 <template>
     <div>
         <svg-icon svgId="menu" :class="'w-7 h-7 rotate-180 hidden'" />
-        <svg-icon svgId="cancel" :class="'w-8 h-8'" />
+        <svg-icon svgId="cancel" :class="'w-7 h-7'" />
     </div>
 </template>
 

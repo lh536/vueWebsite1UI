@@ -2,8 +2,8 @@
     <div class="">
         <div class="h-20 border flex justify-between items-center px-4">
             <navbar-logo />
-            <navbar-icons :class="'ml-auto hidden'" />
-            <navbar-search-form :class="''" />
+            <navbar-icons :class="'ml-auto mr-2'" />
+            <navbar-search-form :class="'hidden'" />
             <navbar-menu :class="''" />
         </div>
     </div>
