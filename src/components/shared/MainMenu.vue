@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showMenu" class="absolute right-0 bg-webSite-white w-3/4 divide-y divide-webSite-gray z-10">
+    <div v-if="showMenu" class="absolute right-0 bg-webSite-white w-3/4 divide-y divide-webSite-gray z-20">
 
             <!-- MEN OPTION -->
             <main-menu-category-title title="Men" />

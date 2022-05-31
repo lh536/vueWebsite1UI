@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showSearchForm" class="relative flex flex-col w-full sm:w-1/2 z-10">
+    <div v-if="showSearchForm" class="relative flex flex-col w-full sm:w-1/2 z-20">
         <form action="">
             <div class="relative">
                 <!-- SEARCH ICON/BUTTON -->

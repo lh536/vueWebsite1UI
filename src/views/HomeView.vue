@@ -5,6 +5,7 @@
         <overlay-layer />
         <hero-section />
         <carousel-section />
+        <banner-men-women />
     </div>
     <!-- <h1>Home View</h1>
     <demo-form message="Hi!! I'm a message from App.vue" />
@@ -22,6 +23,7 @@ import { defineAsyncComponent } from "vue"
             OverlayLayer: defineAsyncComponent(() => import("@/components/shared/OverlayLayer.vue")),
             HeroSection: defineAsyncComponent(() => import("@/components/HeroSection/HeroSection.vue")),
             CarouselSection: defineAsyncComponent(() => import("@/components/CarouselSection.vue")),
+            BannerMenWomen: defineAsyncComponent(() => import("@/components/BannerMenWomen/BannerMenWomen.vue")),
             // DemoForm: defineAsyncComponent(() => import("@/components/DemoForm.vue")),
             // Counter: defineAsyncComponent(() => import("@/components/Counter.vue")),
         }
