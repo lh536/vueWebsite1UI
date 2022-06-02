@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <div class="h-20 border flex justify-between items-center px-4">
+    <div class="z-20">
+        <div class="h-20 flex justify-between items-center px-4">
             <navbar-logo :class="'mr-3'" />
             <navbar-icons v-if="!showSearchForm" :class="'ml-auto'" />
             <navbar-search-form />

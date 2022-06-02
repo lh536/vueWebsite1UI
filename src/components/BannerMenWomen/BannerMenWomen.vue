@@ -1,6 +1,6 @@
 <template>
-    <section class="relative">
-        <div class="absolute top-1/3 left-1/3 inline-flex flex-col space-y-4">
+    <section class="relative flex justify-center">
+        <div class="absolute top-1/3 flex flex-col space-y-4">
             <button class="uppercase px-5 py-1 bg-webSite-white text-webSite-green focus:outline-none focus:ring-2 focus:ring-webSite-white focus:ring-offset-2 focus:ring-offset-webSite-green hover:bg-webSite-lightGray active:bg-webSite-gray active:text-webSite-white">Men</button>
             <button class="uppercase px-5 py-1 bg-webSite-white text-webSite-green focus:outline-none focus:ring-2 focus:ring-webSite-white focus:ring-offset-2 focus:ring-offset-webSite-green hover:bg-webSite-lightGray active:bg-webSite-gray active:text-webSite-white">Women</button>
         </div>

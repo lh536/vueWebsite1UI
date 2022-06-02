@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showMenu" class="absolute top-0 bg-black/75 w-full h-full z-10"></div>
+    <div v-if="showMenu" class="absolute w-full min-h-full bg-black/75 z-10"></div>
 </template>
 
 

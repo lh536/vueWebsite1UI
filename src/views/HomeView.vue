@@ -1,15 +1,19 @@
 <template>
-    <navbar />
-    <main-menu />
-    <div class="relative">
-        <overlay-layer />
-        <hero-section />
-        <carousel-section />
-        <banner-men-women />
+    <div class="relative flex flex-col max-h-screen">
+        <navbar />
+        <div class="relative flex flex-col grow">
+            <overlay-layer />
+            <main-menu />
+            <main>
+                <hero-section />
+                <carousel-section />
+                <banner-men-women />
+            </main>
+        </div>
+        <!-- <h1>Home View</h1>
+        <demo-form message="Hi!! I'm a message from App.vue" />
+        <counter /> -->
     </div>
-    <!-- <h1>Home View</h1>
-    <demo-form message="Hi!! I'm a message from App.vue" />
-    <counter /> -->
 </template>
 
 
